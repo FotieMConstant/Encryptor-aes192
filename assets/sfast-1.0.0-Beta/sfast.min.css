@@ -1,0 +1,359 @@
+/*!
+ * Sfast v1.0.0
+ * Copyright 2018 Wittysoft.
+ * Developer: FOTIE MOGHOMMAHIE CONSTANT
+ * Licensed under MIT License
+ */
+
+/*! Current v1.0.0 | MIT License | Made with love by Wittysoft */
+
+
+/* Griding system below */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+article, aside { flex-basis: 100%; }
+@media (min-width: 576px) {
+  article { flex: 3; }
+  aside { flex: 2 }
+}
+@media (min-width: 768px) {
+  article { flex: 7; }
+  aside { flex: 3 }
+}
+@media (min-width: 992px) {
+  article { flex: 1.5; }
+  aside { flex: 0.5 }
+}
+
+
+* {
+  margin: auto;
+  font-family: sans-serif;
+}
+
+
+
+/*Griding system section */
+/* Default Settings */
+.row,
+.column {
+  box-sizing: border-box;
+}
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+}
+.row:after {
+  clear: both;
+}*/
+.column {
+  position: relative;
+  display: block;
+}
+
+/* Mobile Devices Styling */
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9,
+.column-10,
+.column-11,
+.column-12 {
+  width: auto;
+  float: none;
+}
+.column + .column {
+  margin-left: 0;
+}
+
+/* General Styling */
+body {
+  padding: 10px;
+}
+.row {
+  margin-bottom: 0;
+}
+.column {
+  color: #fff;
+  padding: 20px;
+  min-height: 30px;
+  margin-bottom: 10px;
+}
+.row:last-child .column:last-child {
+  margin-bottom: 0;
+}
+.column-1 {
+  background-color: rgb(255, 255, 255);
+}
+.column-2 {
+  background-color: rgb(255, 255, 255);
+}
+.column-3 {
+  background-color: rgb(255, 255, 255);
+}
+.column-4 {
+  background-color: rgb(255, 255, 255);
+}
+.column-5 {
+  background-color: rgb(255, 255, 255);
+}
+.column-6 {
+  background-color: rgb(255, 255, 255);
+}
+.column-7 {
+  background-color: rgb(255, 255, 255);
+}
+.column-8 {
+  background-color: rgb(255, 255, 255);
+}
+.column-9 {
+  background-color: rgb(255, 255, 255);
+}
+.column-10 {
+  background-color: rgb(255, 255, 255);
+}
+.column-11 {
+  background-color: rgb(255, 255, 255);
+}
+.column-12 {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Larger Screens Styling */
+@media only screen and (min-width: 768px) {
+  .column {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+  }
+  .column + .column {
+    margin-left: 1.6%;
+  }
+  .row {
+    margin-bottom: 10px;  
+  }
+  .row .row:last-child {
+    margin-bottom: 0;
+  }
+  .column-1 {
+    width: 6.86666666667%;
+  }
+  .column-2 {
+    width: 15.3333333333%;
+  }
+  .column-3 {
+    width: 23.8%;
+  }
+  .column-4 {
+    width: 32.2666666667%;
+  }
+  .column-5 {
+    width: 40.7333333333%;
+  }
+  .column-6 {
+    width: 49.2%;
+  }
+  .column-7 {
+    width: 57.6666666667%;
+  }
+  .column-8 {
+    width: 66.1333333333%;
+  }
+  .column-9 {
+    width: 74.6%;
+  }
+  .column-10 {
+    width: 83.0666666667%;
+  }
+  .column-11 {
+    width: 91.5333333333%;
+  }
+  .column-12 {
+    width: 100%;
+  }
+}
+
+
+
+
+  /* Buttons areas */
+.btn{
+  padding: 10px;
+  background-color: linear-gradient(to top right, #eaeae1 0%, #ccccff 100%);
+  border: 1px solid #eaeae1;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+.btn:hover{
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  transition: .5s;
+}
+
+.btn.btn-default{
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #eaeae1;
+  transition: .5s;
+
+}
+
+.btn.btn-default:hover{
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  transition: .5s;
+}
+
+.btn.btn-primary{
+  background-color: #3366ff;
+  border: 1px solid #3366ff;
+  color: #ffffff;
+  transition: .5s;
+
+}
+
+.btn.btn-primary:hover{
+  background-color: #0040ff;
+  border: 1px solid #0040ff;
+  transition: .5s;
+}
+
+
+.btn.btn-success{
+  background-color: #00b300;
+  transition: .5s;
+  color: #ffffff;
+  border: 1px solid #00b300;
+}
+
+.btn.btn-success:hover{
+  background-color: #008000;
+  border: 1px solid #008000;
+  transition: .5s;
+}
+
+.btn.btn-info{
+  background-color: #4dc3ff;
+  border: 1px solid #4dc3ff;
+  color: #ffffff;
+  transition: .5s;
+
+}
+
+.btn.btn-info:hover{
+  background-color: #1ab2ff;
+  border: 1px solid #1ab2ff;
+  transition: .5s;
+}
+
+.btn.btn-warning{
+  background-color: #ff661a;
+  border: 1px solid #ff661a;
+  color: #ffffff;
+  transition: .5s;
+
+}
+
+.btn.btn-warning:hover{
+  background-color: #e64d00;
+  border: 1px solid #e64d00;
+  transition: .5s;
+}
+
+.btn.btn-danger{
+  background-color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+  color: #ffffff;
+  transition: .5s;
+}
+
+.btn.btn-danger:hover{
+  background-color: #e60000;
+  border: 1px solid #e60000;
+  transition: .5s;
+}
+
+.btn.btn-link{
+  width: auto;
+  background-color: white;
+  border: 1px solid white;
+  border-bottom: 1px solid #3366ff;
+  color: #3366ff;
+}
+
+
+
+/* Wells Syling*/
+
+.nml-well{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+
+}
+
+
+
+/* Styling Input types*/
+
+form {
+  width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #CCC;
+}
+form > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.from-left,
+.from-right,
+.from-middle {
+  position: relative;
+}
+.from-left input,
+.from-right input,
+.from-middle input {
+  width: 100%;
+  padding: 5px 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #CCC;
+}
+.from-left .border,
+.from-right .border,
+.from-middle .border {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3366ff;
+  transition: all .3s ease-in-out;
+}
+.from-left .border {left: 0}
+.from-right .border {right: 0}
+.from-middle .border {left: 50%}
+.from-left input:focus + .border,
+.from-right input:focus + .border {
+  width: 100%;
+}
+.from-middle input:focus + .border {
+  left: 0;
+  width: 100%;
+}
+
+/* Text area styling*/
